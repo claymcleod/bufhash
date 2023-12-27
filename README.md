@@ -11,4 +11,4 @@ Buffered hashing utilities for Rust.
 
 See the [documentation] for details on the package and how to write a buffered hasher.
 
-[documentation]: docs.rs/bufhash
+[documentation]: https://docs.rs/bufhash
