@@ -22,8 +22,8 @@
 //! ```ignore
 //! let mut hasher = MyHasher::default();
 //!
-//! hasher.write(b"Hi,");
-//! hasher.write(b"there ");
+//! hasher.write(b"Hi ");
+//! hasher.write(b"there, ");
 //! hasher.write(b"world!");
 //!
 //! println!("Result: 0x{:X}", hasher.finish());
@@ -32,7 +32,7 @@
 //! In this example, the data being hashed is incrementally fed to the hasher over three
 //! different [`write()`](std::hash::Hasher::write) calls. Recalling that our hasher
 //! works on four byte chunks, the first three characters in the byte string literal
-//! (i.e., `b"Hi,"`) are not sufficient to fill out a full block of data to be hashed.
+//! (i.e., `b"Hi "`) are not sufficient to fill out a full block of data to be hashed.
 //! However, we similarly do not want to treat these three characters as if they are the
 //! end of the data stream, as more data may be coming (and, in fact, _is_ in our
 //! example. With the facilities provided by the Rust standard library, it is up to the
