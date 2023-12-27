@@ -1,6 +1,6 @@
 [package]
 name = "bufhash"
-version = "0.1.0"
+version = "0.1.1"
 author = "Clay McLeod <clay.l.mcleod@gmail.com>"
 description = "Buffered hashing facilities"
 license = "MIT OR Apache-2.0"
